@@ -4,6 +4,8 @@
 
 package com.mycompany.proyectofinal;
 
+import Frontend.PaginaPrincipal;
+
 /**
  *
  * @author juanp
@@ -11,6 +13,8 @@ package com.mycompany.proyectofinal;
 public class ProyectoFinal {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+      //  System.out.println("Hello World!");
+        PaginaPrincipal pg = new PaginaPrincipal();
+        pg.setVisible(true);
     }
 }
