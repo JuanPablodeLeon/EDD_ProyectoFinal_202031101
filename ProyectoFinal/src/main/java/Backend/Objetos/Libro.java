@@ -4,6 +4,8 @@
  */
 package Backend.Objetos;
 
+import java.util.Objects;
+
 /**
  *
  * @author juanp
@@ -116,5 +118,23 @@ public class Libro {
     
     public boolean estadoTransito(){
         return "transito".equalsIgnoreCase(estado);
+    }
+    
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+        Libro libro = (Libro) obj;
+        return Objects.equals(titulo, libro.titulo) &&
+               Objects.equals(ISBN, libro.ISBN) &&
+               Objects.equals(genero, libro.genero) &&
+               Objects.equals(fecha, libro.fecha) &&
+               Objects.equals(autor, libro.autor) &&
+               Objects.equals(estado, libro.estado);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(titulo, ISBN, genero, fecha, autor, estado);
     }
 }

@@ -19,7 +19,7 @@ public class ProyectoFinal {
         /*PaginaPrincipal pg = new PaginaPrincipal();
         pg.setVisible(true);*/
 
-        Lista<Libro> lista = new Lista<>();
+       /* Lista<Libro> lista = new Lista<>();
         
         lista.insertar(new Libro("Cien años de soledad", "978-8437604947", "Novela", "1967", "Gabriel García Márquez","A","B","disponible","costo"));        
         lista.insertar(new Libro("Cien años de soledad", "979-8437604947", "Novela", "1967", "Gabriel García Márquez","A","B","disponible","costo"));
@@ -42,6 +42,8 @@ public class ProyectoFinal {
         boolean eliminar = lista.eliminar(libro -> libro.getISBN().equals("908-8437604947"));
         System.out.println("Eliminado" + eliminar);
         
-        lista.imprimir();
+        lista.imprimir();*/
+       
+
     }
 }
