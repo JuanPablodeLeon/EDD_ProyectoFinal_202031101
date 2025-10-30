@@ -99,7 +99,22 @@ public class Libro {
 
     @Override
     public String toString() {
-        return "Libro{" + "titulo=" + titulo + ", ISBN=" + ISBN + ", genero=" + genero + ", fecha=" + fecha + ", autor=" + autor + ", estado=" + estado + ", idOrigen=" + idOrigen + ", idDestino=" + idDestino + ", prioridad=" + prioridad + '}';
+        return "|| " + titulo + " || " + ISBN + " || " + genero + " || " + fecha + " || " + autor + " || " + estado + " || " + idOrigen + " || " + idDestino + " || " + prioridad + " ||";
     }
     
+    public int conversionInt(){
+        return Integer.parseInt(fecha);
+    }
+
+    public boolean estadoDiponible(){
+        return "disponible".equalsIgnoreCase(estado);
+    }
+    
+    public boolean estadoAgotado(){
+        return "agotado".equalsIgnoreCase(estado);
+    }
+    
+    public boolean estadoTransito(){
+        return "transito".equalsIgnoreCase(estado);
+    }
 }

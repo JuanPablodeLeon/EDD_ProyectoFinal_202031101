@@ -1,1 +1,6 @@
+Backend\Objetos\Libro.class
+Backend\Objetos\Bibliotecas.class
+Backend\Estructuras\Lista.class
 com\mycompany\proyectofinal\ProyectoFinal.class
+Backend\Objetos\Conexiones.class
+Backend\Nodos\Nodo.class
