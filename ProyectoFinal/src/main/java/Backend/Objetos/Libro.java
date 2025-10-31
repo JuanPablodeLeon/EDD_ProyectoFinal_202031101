@@ -4,6 +4,7 @@
  */
 package Backend.Objetos;
 
+import Backend.Estructuras.Lista;
 import java.util.Objects;
 
 /**
@@ -14,6 +15,7 @@ public class Libro {
     
     //Posible modificacio para los enums
     private String titulo, ISBN, genero, fecha, autor, estado, prioridad;
+    private Lista<Libro> listaRepetidos;
 
     public Libro(String titulo, String ISBN, String genero, String fecha, String autor, String estado, String prioridad) {
         this.titulo = titulo;
@@ -23,6 +25,7 @@ public class Libro {
         this.autor = autor;
         this.estado = estado;
         this.prioridad = prioridad;
+        this.listaRepetidos = new Lista<>();
     }
 
     public String getTitulo() {
@@ -79,6 +82,10 @@ public class Libro {
 
     public void setPrioridad(String prioridad) {
         this.prioridad = prioridad;
+    }
+
+    public Lista<Libro> getListaRepetidos() {
+        return listaRepetidos;
     }
 
     @Override
