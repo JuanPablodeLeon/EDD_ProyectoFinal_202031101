@@ -13,17 +13,15 @@ import java.util.Objects;
 public class Libro {
     
     //Posible modificacio para los enums
-    private String titulo, ISBN, genero, fecha, autor, estado, idOrigen, idDestino, prioridad;
+    private String titulo, ISBN, genero, fecha, autor, estado, prioridad;
 
-    public Libro(String titulo, String ISBN, String genero, String fecha, String autor, String estado, String idOrigen, String idDestino, String prioridad) {
+    public Libro(String titulo, String ISBN, String genero, String fecha, String autor, String estado, String prioridad) {
         this.titulo = titulo;
         this.ISBN = ISBN;
         this.genero = genero;
         this.fecha = fecha;
         this.autor = autor;
         this.estado = estado;
-        this.idOrigen = idOrigen;
-        this.idDestino = idDestino;
         this.prioridad = prioridad;
     }
 
@@ -75,22 +73,6 @@ public class Libro {
         this.estado = estado;
     }
 
-    public String getIdOrigen() {
-        return idOrigen;
-    }
-
-    public void setIdOrigen(String idOrigen) {
-        this.idOrigen = idOrigen;
-    }
-
-    public String getIdDestino() {
-        return idDestino;
-    }
-
-    public void setIdDestino(String idDestino) {
-        this.idDestino = idDestino;
-    }
-
     public String getPrioridad() {
         return prioridad;
     }
@@ -101,7 +83,7 @@ public class Libro {
 
     @Override
     public String toString() {
-        return "|| " + titulo + " || " + ISBN + " || " + genero + " || " + fecha + " || " + autor + " || " + estado + " || " + idOrigen + " || " + idDestino + " || " + prioridad + " ||";
+        return "|| " + titulo + " || " + ISBN + " || " + genero + " || " + fecha + " || " + autor + " || " + estado + " || " + prioridad + " ||";
     }
     
     public int conversionInt(){
