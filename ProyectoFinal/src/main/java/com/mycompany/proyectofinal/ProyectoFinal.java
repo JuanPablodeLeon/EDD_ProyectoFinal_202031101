@@ -4,7 +4,9 @@
 
 package com.mycompany.proyectofinal;
 
+import Backend.Estructuras.HashTable;
 import Backend.Estructuras.Lista;
+import Backend.Objetos.Bibliotecas;
 import Backend.Objetos.Libro;
 import Frontend.PaginaPrincipal;
 
@@ -44,6 +46,22 @@ public class ProyectoFinal {
         
         lista.imprimir();*/
        
+       // Para libros (ISBN como clave)
+    HashTable<String, Libro> tablaLibros = new HashTable<>(100);
+    tablaLibros.insertar("978-1234567890", new Libro("Cien años de soledad","","","","","",""));
+
+    // Para bibliotecas (ID como clave)
+    HashTable<String, Bibliotecas> tablaBibliotecas = new HashTable<>(50);
+    tablaBibliotecas.insertar("BIB-001", new Bibliotecas("Biblioteca Central","","",0,0,0));
+
+    // Buscar
+    Libro libro = tablaLibros.buscar("978-1234567890");
+    tablaLibros.mostrarElementos();
+    // Eliminar
+    tablaLibros.eliminar("978-1234567890");
+
+    // Mostrar todos
+    tablaLibros.mostrarElementos();
 
     }
 }

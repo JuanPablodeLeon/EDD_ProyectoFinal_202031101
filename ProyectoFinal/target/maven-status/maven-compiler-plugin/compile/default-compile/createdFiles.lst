@@ -2,8 +2,10 @@ Backend\Objetos\Libro.class
 Backend\Arboles\AVL.class
 Backend\Objetos\Bibliotecas.class
 Backend\Estructuras\Cola.class
+Backend\Estructuras\HashTable.class
 Backend\Estructuras\Lista.class
 com\mycompany\proyectofinal\ProyectoFinal.class
+Backend\Nodos\NodoHash.class
 Backend\Nodos\AVLNodo.class
 Backend\Arboles\B.class
 Backend\Nodos\NodoB.class
