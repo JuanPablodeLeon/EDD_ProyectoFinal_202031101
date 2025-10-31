@@ -82,5 +82,17 @@ public class Lista<T>{
         return false;
     }
 
+    public boolean estaVacio(){
+        return primero == null;
+    }
+
+    public Nodo<T> getPrimero() {
+        return primero;
+    }
+
+    public int getSize() {
+        return size;
+    }
+    
     
 }
