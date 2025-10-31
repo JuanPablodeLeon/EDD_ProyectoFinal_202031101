@@ -93,6 +93,5 @@ public class Lista<T>{
     public int getSize() {
         return size;
     }
-    
-    
+   
 }
